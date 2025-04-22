@@ -1,0 +1,34 @@
+{
+    "workbench.startupEditor": "none",
+    "files.autoSave": "afterDelay",
+
+    "editor.fontFamily": "FiraCode Nerd Font Mono",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.minimap.autohide": true,
+    "editor.scrollbar.vertical": "hidden",
+
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+    "terminal.integrated.fontSize": 16, 
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "line",
+    
+    "workbench.editor.showTabs": "single",
+    "workbench.colorCustomizations": {
+        "editor.background": "#141414",
+        "activityBar.background": "#141414",
+        "terminal.background": "#141414",
+        "sideBar.background": "#141414",
+        "sideBar.border": "#141414",
+        "activityBar.border": "#141414",
+        "statusBar.background": "#141414",
+        "statusBar.border": "#141414",
+        "menu.background": "#141414",
+    },
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "window.menuBarVisibility": "compact",
+    "editor.renderLineHighlight": "none"
+}
