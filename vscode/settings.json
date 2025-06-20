@@ -1,5 +1,4 @@
 {
-    "workbench.startupEditor": "none",
     "files.autoSave": "afterDelay",
 
     "editor.fontFamily": "FiraCode Nerd Font Mono",
@@ -26,9 +25,20 @@
         "statusBar.background": "#141414",
         "statusBar.border": "#141414",
         "menu.background": "#141414",
+        "statusBar.noFolderBackground": "#141414"
     },
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "window.menuBarVisibility": "compact",
-    "editor.renderLineHighlight": "none"
+    "editor.renderLineHighlight": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "icons",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false
+    },
+    
 }
