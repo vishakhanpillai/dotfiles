@@ -1,70 +1,37 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": "find",
-            "id": "User.find"
-        }
-    ],
+    "actions": [],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "keybindings": 
+    "initialCols": 140,
+    "initialRows": 45,
+    "keybindings":
     [
         {
-            "id": "User.copy.644BA8F2",
+            "id": "Terminal.CopyToClipboard",
             "keys": "ctrl+c"
         },
         {
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "id": "User.paste",
+            "id": "Terminal.PasteFromClipboard",
             "keys": "ctrl+v"
         },
         {
-            "id": "User.splitPane.A6751878",
+            "id": "Terminal.DuplicatePaneAuto",
             "keys": "alt+shift+d"
-        },
-        {
-            "id": "Terminal.SplitPaneDown",
-            "keys": "ctrl+shift+e"
         }
     ],
-    "newTabMenu": 
+    "newTabMenu":
     [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
+    "profiles":
     {
         "defaults": {},
-        "list": 
+        "list":
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -85,55 +52,108 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "colorScheme": "Monokai Vivid",
+                "colorScheme": "Catppuccin Mocha",
                 "commandline": "pwsh.exe -nologo",
-                "font": 
+                "font":
                 {
                     "face": "FiraCode Nerd Font Mono"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
-                "opacity": 85,
+                "opacity": 95,
                 "scrollbarState": "hidden",
                 "source": "Windows.Terminal.PowershellCore",
-                "useAcrylic": false
+                "useAcrylic": true
             },
             {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "colorScheme": "catppuccin-mocha",
+                "font":
+                {
+                    "face": "FiraCode Nerd Font Mono",
+                    "size": 12
+                },
+                "guid": "{8421e757-a923-52bc-b501-f1a0875df195}",
                 "hidden": false,
-                "name": "Git Bash",
-                "source": "Git"
+                "name": "Ubuntu",
+                "opacity": 90,
+                "source": "Microsoft.WSL",
+                "useAcrylic": true
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
-            "background": "#121212",
-            "black": "#121212",
-            "blue": "#0443FF",
-            "brightBlack": "#838383",
-            "brightBlue": "#0443FF",
-            "brightCyan": "#51CEFF",
-            "brightGreen": "#B1E05F",
-            "brightPurple": "#F200F6",
-            "brightRed": "#F6669D",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFF26D",
-            "cursorColor": "#FB0007",
-            "cyan": "#01B6ED",
-            "foreground": "#F9F9F9",
-            "green": "#98E123",
-            "name": "Monokai Vivid",
-            "purple": "#F800F8",
-            "red": "#FA2934",
-            "selectionBackground": "#FFFFFF",
-            "white": "#FFFFFF",
-            "yellow": "#FFF30A"
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#3465A4",
+            "brightBlack": "#555753",
+            "brightBlue": "#729FCF",
+            "brightCyan": "#34E2E2",
+            "brightGreen": "#8AE234",
+            "brightPurple": "#AD7FA8",
+            "brightRed": "#EF2929",
+            "brightWhite": "#EEEEEC",
+            "brightYellow": "#FCE94F",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#06989A",
+            "foreground": "#FFFFFF",
+            "green": "#4E9A06",
+            "name": "Builtin Tango Dark",
+            "purple": "#75507B",
+            "red": "#CC0000",
+            "selectionBackground": "#B5D5FF",
+            "white": "#D3D7CF",
+            "yellow": "#C4A000"
+        },
+        {
+            "background": "#1E1E2E",
+            "black": "#45475A",
+            "blue": "#89B4FA",
+            "brightBlack": "#585B70",
+            "brightBlue": "#89B4FA",
+            "brightCyan": "#94E2D5",
+            "brightGreen": "#A6E3A1",
+            "brightPurple": "#F5C2E7",
+            "brightRed": "#F38BA8",
+            "brightWhite": "#A6ADC8",
+            "brightYellow": "#F9E2AF",
+            "cursorColor": "#F5E0DC",
+            "cyan": "#94E2D5",
+            "foreground": "#CDD6F4",
+            "green": "#A6E3A1",
+            "name": "Catppuccin Mocha",
+            "purple": "#F5C2E7",
+            "red": "#F38BA8",
+            "selectionBackground": "#585B70",
+            "white": "#BAC2DE",
+            "yellow": "#F9E2AF"
+        },
+        {
+            "background": "#1E1E2E",
+            "black": "#45475A",
+            "blue": "#89B4FA",
+            "brightBlack": "#585B70",
+            "brightBlue": "#89B4FA",
+            "brightCyan": "#94E2D5",
+            "brightGreen": "#A6E3A1",
+            "brightPurple": "#F5C2E7",
+            "brightRed": "#F38BA8",
+            "brightWhite": "#A6ADC8",
+            "brightYellow": "#F9E2AF",
+            "cursorColor": "#F5E0DC",
+            "cyan": "#94E2D5",
+            "foreground": "#CDD6F4",
+            "green": "#A6E3A1",
+            "name": "catppuccin-mocha",
+            "purple": "#F5C2E7",
+            "red": "#F38BA8",
+            "selectionBackground": "#585B70",
+            "white": "#BAC2DE",
+            "yellow": "#F9E2AF"
         }
     ],
-    "tabWidthMode": "compact",
     "themes": [],
     "useAcrylicInTabRow": true
 }
